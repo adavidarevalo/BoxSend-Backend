@@ -15,6 +15,7 @@ app.use(cors(CorsOptions))
 app.use(express.static("uploads"))
 const port = process.env.PORT || 4000;
 
+
 app.use(express.json())
 
 app.use("/api/user", require("./routes/user"))
