@@ -8,7 +8,7 @@ connectDB()
 
 
 const CorsOptions = {
-  origin: "https://angry-volhard-95085a.netlify.app"
+  origin: "https://modest-torvalds-20cdbf.netlify.app/"
 }
 app.use(cors(CorsOptions))
 
