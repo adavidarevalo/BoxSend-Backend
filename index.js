@@ -8,9 +8,9 @@ connectDB()
 
 
 const CorsOptions = {
-  origin: "https://modest-torvalds-20cdbf.netlify.app/"
+  origin: "https://modest-torvalds-20cdbf.netlify.app"
 }
-app.use(cors(CorsOptions))
+app.use(cors())
 
 app.use(express.static("uploads"))
 const port = process.env.PORT || 4000;
