@@ -8,7 +8,7 @@ connectDB()
 
 
 const CorsOptions = {
-  origin: "http://localhost:3000"
+  origin: "https://angry-volhard-95085a.netlify.app"
 }
 app.use(cors(CorsOptions))
 
