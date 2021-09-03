@@ -75,7 +75,11 @@ exports.validatePassword = async(req, res, next)=>{
   try{
     const data = await Link.find({url})
     if(req.body.pass === data[0].password){
-      return res.json({validate: true})
+      const result = {
+        validate: true,
+        name: data[0].name
+      }
+      return res.json(result)
     } else{
       return res.json({msg: "Incorrect Password"})
     }
